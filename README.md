@@ -11,7 +11,7 @@ This is a Python-based Podcast App with features for managing podcasts, includin
 - **Delete Episodes**: Users can delete podcast episodes from their channels.
 
 ## Requirements
-- Python 3.x
+- Python 3.12
 - PyQt6
 - SQLite (Built-in)
 
@@ -20,6 +20,11 @@ This is a Python-based Podcast App with features for managing podcasts, includin
    ```bash
    pip install PyQt6
    ```
+## Setup
+* Ensure you have SQLite installed on your system (it comes pre-installed with Python).
+* The application creates an SQLite database file called podcast_app.db for storing user and podcast data.
+* You can manually add or delete podcast episodes and channels via the app interface.
+   
 ## Usage
 1.Run the application:
 ```
@@ -29,8 +34,8 @@ python podcast_app.py
 
 3.Once logged in, you can create new channels, add episodes, and manage your podcasts.
 
-# About photo_organizer.exe
-* photo_organizer.exe is developed using pyinstaller.
+# About podcast.exe
+* podcast.exe is developed using pyinstaller.
 * PyInstaller is a tool that can be used to convert Python scripts into standalone executable applications. It packages Python code along with all of its dependencies into a single executable file for various platforms like Windows, macOS, and Linux. To make a Windows app you run PyInstaller on Windows, and to make a Linux app you run it on Linux, etc.
 
 ## How to develop
@@ -42,8 +47,8 @@ If there are any issues after installation, add PyInstaller to the environment p
 
 2.Running PyInstaller: 
 
-Create a folder and place the photo_organizer.py file inside it. Open the folder in VSCode and run the command:
+Create a folder and place the podcast.py file inside it. Open the folder in VSCode and run the command:
 ```
-pyinstaller --onefile --windowed photo_organizer.py
+pyinstaller --onefile --windowed podcast.py
 ```
-After running the command, you will see two new folders and a new file. Go to the dist folder, and you will find the photo_organizer.exe app."
+After running the command, you will see two new folders and a new file. Go to the dist folder, and you will find the podcast.exe app."
